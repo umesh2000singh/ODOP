@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* header section */
+header {
+    height: 150px;
+    background-color: #FFF8C1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    height: 70px;
+    margin-left: 20px;
+}
+
+/* Style the search bar container */
+.search-bar {
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Style the search input */
+.search-bar input[type="text"] {
+    border-radius: 5px 0px 0px 5px;
+    flex: 1;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+}
+
+/* Style the search button */
+.search-bar button[type="submit"] {
+    border: none;
+    height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Style the search icon */
+.search-bar i.fa-search {
+    font-size: 20px;
+}
+
+/* header section */
+
+
+/* navbar section */
+.navbar {
+    background-color: #DD2D30;
+    height: 70px;
+    position: relative;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul li {
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger {
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+    background-color: rgb(44, 114, 44);
+    padding: 10px;
+    z-index: 999;
+}
+
+.line {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+}
+
+.hamburger :nth-child(2),
+.hamburger :nth-child(3) {
+    margin-top: 5px;
+}
+
+.hamburgerMenu {
+    z-index: 100;
+    background-color: #DD2D30;
+    position: absolute;
+    top: 30%;
+    left: 1.5%;
+    height: 0px;
+    width: 300px;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.hamburgerMenu_clicked {
+    height: 500px;
+}
+
+.signin_menu {
+    display: inline-block;
+    position: absolute;
+    right: 110px;
+    height: 120px;
+    width: 190px;
+    background-color: white;
+    padding: 10px;
+    display: none;
+}
+
+.signin_menu_display {
+    display: block;
+}
+
+.signin_menu ul li {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signin_menu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar section */
+
+
+.corousal {
+    margin: 40px 20px;
+}
+
+.corousal img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* mainbody section */
+
+.mainbody {
+    align-items: center;
+    text-align: center;
+}
+
+.mainbody h1 {
+    font-size: 50px;
+    color: #757575;
+}
+
+.mainbody h2 {
+    margin-top: 10px;
+    color: black;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.mainbody p {
+    margin: 30px 100px 10px 100px;
+    font-size: 18px;
+}
+
+.jammu {
+    color: #FE6F29;
+    background-color: black;
+    padding: 10px;
+    
+}
+.state{
+    overflow: hidden;
+}
+.and {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.kashmir {
+    background-color: black;
+    padding: 10px;
+    color: #138808;
+}
+
+.read_more {
+    background-color: #DD2D30;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+
+
+/* responsive design media querry */
+
+@media (max-width:768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .search-bar{
+        display: none;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links,
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+
+/* Style for the product card */
+
+.products_section{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    
+    flex-direction: column;
+}
+.products_section h1{
+    font-size: 40px;
+}
+.product-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #DD2D30;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Style the footer container */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* Style the content within the footer */
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style the logo and company name */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Style the navigation links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Style the social media icons */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-right: 20px;
+}
+
+.footer-social img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+}
+
+/* Style the bottom part of the footer */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+
+
+
+/* corousal  */
+
+
+
